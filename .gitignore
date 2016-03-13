@@ -1,0 +1,13 @@
+# Folders #
+###################
+  public
+
+# Node & npm #
+###################
+  node_modules/
+  npm-debug.log
+
+# Sass files #
+###################
+  .sass-cache
+  **/generated/_icons.sass

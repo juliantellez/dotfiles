@@ -1,0 +1,52 @@
+# Folders #
+###################
+  public
+
+# Node & npm #
+###################
+  node_modules
+  npm-debug.log
+
+# Sass files #
+###################
+  .sass-cache
+  **/generated/_icons.sass
+
+# Web-storm's IntelliJ IDEA-based IDEs #
+############
+  .idea/
+
+# OS generated files #
+######################
+  .DS_Store
+  .DS_Store?
+  ._*
+  .Spotlight-V100
+  .Trashes
+  ehthumbs.db
+  Thumbs.db
+
+# Windows generated files #
+######################
+  Desktop.ini
+
+# Compiled source #
+###################
+  *.com
+  *.class
+  *.dll
+  *.exe
+  *.o
+  *.so
+
+# Packages #
+############
+  # it's better to unpack these files and commit the raw source
+  *.7z
+  *.dmg
+  *.gz
+  *.iso
+  *.jar
+  *.rar
+  *.tar
+  *.zip
