@@ -65,3 +65,18 @@ mkdir ~/.ssh
 cd ~/.ssh
 ssh-keygen
 ```
+
+### vim https://github.com/junegunn/vim-plug
+```
+brew install vim --with-override-system-vim
+
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+
+Once you have your .vimrc, do the following
+```
+  :source %
+  :PluginInstall
+```
+
