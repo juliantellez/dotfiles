@@ -1,6 +1,6 @@
-# DOTFILES
+# Dotfiles
 
-##  SETUP
+##  Setup
 ```
     git init --bare $HOME/.dotfiles
     echo "alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'" >> $HOME/.zshrc
@@ -9,7 +9,7 @@
     dotfiles remote add origin git@github.com:<username>/dotfiles.git
 ```
 
-##  USAGE
+##  Usage
 ```
     dotfiles status
     dotfiles add .myfile
@@ -17,7 +17,7 @@
     dotfiles push
 ```
 
-## INSTALLING ON A NEW MACHINE
+## Installing on a new machine
 ```
     git clone --separate-git-dir=$HOME/.dotfiles https://github.com/<username>/dotfiles.git dotfiles-tmp
     rsync --recursive --verbose --exclude '.git' dotfiles-tmp/ $HOME/
