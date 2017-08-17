@@ -4,6 +4,7 @@
 [core]
 	editor = vim
 	autocrlf = input
+	excludesfile = /Users/aliandjules/.gitignore_global
 [color]
 	ui = auto
 [color "branch"]
