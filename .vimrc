@@ -17,10 +17,13 @@ Plug 'tpope/vim-fugitive'
 Plug 'ap/vim-css-color'
 Plug 'hail2u/vim-css3-syntax'
 
+"JS
+Plug 'justinj/vim-react-snippets'
+Plug 'https://github.com/vim-syntastic/syntastic.git'
+
 Plug '907th/vim-auto-save'
 
 Plug 'airblade/vim-gitgutter'
-Plug 'eslint/eslint'
 
 call plug#end()				" List ends here. Plugins become visible to Vim after this call.
 
@@ -55,3 +58,15 @@ let g:ctrlp_cmd = 'CtrlP'
 
 "NERD TREE
 let g:ctrlp_dont_split = 'NERD'
+
+"ESLINT
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_javascript_eslint_exe = 'npm run lint --'

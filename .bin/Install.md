@@ -34,6 +34,7 @@ mkdir ~/.virtualenvs
 ## BREW
 ```
 brew install zsh-syntax-highlighting
+brew install the_silver_searcher
 brew install htop
 ```
 
@@ -66,9 +67,10 @@ cd ~/.ssh
 ssh-keygen
 ```
 
-### vim https://github.com/junegunn/vim-plug
+### VIM https://github.com/junegunn/vim-plug
 ```
 brew install vim --with-override-system-vim
+# install vim-plug https://github.com/junegunn/vim-plug
 
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
