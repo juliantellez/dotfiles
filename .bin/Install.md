@@ -36,6 +36,7 @@ mkdir ~/.virtualenvs
 brew install zsh-syntax-highlighting
 brew install the_silver_searcher
 brew install htop
+brew install python3
 ```
 
 ## NPM

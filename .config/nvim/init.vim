@@ -1,4 +1,4 @@
-call plug#begin('~/.vim/plugged')	" Plugins will be downloaded under the specified directory.
+call plug#begin('~/.local/share/nvim/plugged')	" Plugins will be downloaded under the specified directory.
 
 " Declare the list of plugins.
 Plug 'bling/vim-airline'
@@ -12,6 +12,9 @@ Plug 'kien/ctrlp.vim'
 
 Plug 'majutsushi/tagbar'
 Plug 'tpope/vim-fugitive'
+
+"AUTO-COMPLETE
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 "CSS
 Plug 'ap/vim-css-color'
@@ -62,6 +65,10 @@ let g:airline_theme='zenburn'
 "CTRL-P search
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\.git$\|\.yardoc\|node_modules\|log\|tmp$',
+  \ 'file': '\.so$\|\.dat$|\.DS_Store$'
+  \ }
 
 "NERD TREE
 let g:ctrlp_dont_split = 'NERD'
@@ -71,10 +78,14 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
-let g:syntastic_cmd = 'eslint'
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_javascript_eslint_exe = 'npm run lint --'
+
+"AUTO-COMPLETE DEOPLETE
+let g:deoplete#enable_at_startup = 1
+
+
