@@ -49,6 +49,9 @@ avn setup
 
 ## AWS http://docs.aws.amazon.com/cli/latest/userguide/installing.html
 ```
+// easier if installed with brew
+brew install awscli
+
 pip install awscli --upgrade --user
 aws --version
 aws configure
