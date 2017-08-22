@@ -1,0 +1,42 @@
+{
+    "editor.tabSize": 2,
+    "editor.tabCompletion": true,
+    "editor.detectIndentation": false,
+    "editor.scrollBeyondLastLine": false,
+    "editor.rulers": [80],
+    "editor.cursorBlinking": "phase",
+    "editor.renderWhitespace": "all",
+    "editor.minimap.enabled": false,
+    "editor.fontFamily": "Source Code Pro for Powerline",
+    // Files
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    "explorer.openEditors.visible": 0,
+    // Search
+    "search.exclude": {
+      "**/public": true,
+      "**/build": true,
+      "**/node_modules": true
+    },
+    "search.useIgnoreFilesByDefault": true,
+    // HTML
+    "html.format.wrapLineLength": 80,
+    //JS
+    "javascript.validate.enable": false,
+    // ESLint
+    "eslint.autoFixOnSave": true,
+    //SCSS
+    "scss.lint.duplicateProperties": "warning",
+    "scss.lint.importStatement": "warning",
+    "scss.lint.boxModel": "warning",
+    "scss.lint.zeroUnits": "warning",
+    "scss.lint.unknownVendorSpecificProperties": "warning",
+    "scss.lint.important": "warning",
+    "scss.lint.float": "warning",
+    "scss.lint.idSelector": "warning",
+    "window.zoomLevel": 0,
+    "workbench.iconTheme": "vs-seti",
+    "workbench.colorTheme": "Darcula",
+    // TERMINAL
+    "terminal.integrated.fontFamily": "Source Code Pro for Powerline"
+  }
