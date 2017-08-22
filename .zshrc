@@ -7,7 +7,11 @@ export ZSH=$HOME/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="sunrise"
+ZSH_THEME="powerlevel9k/powerlevel9k"
+#POWERLEVEL9K_MODE="awesome-fontconfig"
+#ZSH_THEME="sunrise"
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir_writable dir vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status nvm node_version background_jobs history)
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"

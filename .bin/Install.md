@@ -15,6 +15,16 @@ xcode-select --install
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
+## powerlevel9k https://github.com/bhilburn/powerlevel9k/
+```
+	- clone into oh-my-zsh
+	git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+
+
+	- install the fonts
+	https://powerline.readthedocs.io/en/latest/installation/linux.html#fonts-installation
+```
+
 ## BREW https://brew.sh/
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"

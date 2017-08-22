@@ -22,3 +22,5 @@ typings*
 jsconfig.json
 .vscode
 .project
+yarn-error.log
+package-lock.json
